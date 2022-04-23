@@ -6,11 +6,12 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 23:45:36 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/23 19:39:42 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/23 21:07:52 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+# include "HumanB.hpp"
+# include "HumanA.hpp"
 
 int main()
 {
