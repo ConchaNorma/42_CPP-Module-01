@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 22:00:15 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/21 22:21:04 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/23 19:35:19 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,14 @@
 class HumanB
 {
 private:
-	std::string	name;
-	Weapon	*weapon;
+	std::string	h_name;
+	Weapon*	h_weapon;
+
 public:
-	HumanB(std::string	name);
+	HumanB(std::string name);
 	~HumanB();
+	void setWeapon(Weapon& weapon);
 	void attack();
-	void setWeapon(Weapon *weapon);
 };
 
 #endif

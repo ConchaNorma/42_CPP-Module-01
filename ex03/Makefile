@@ -6,13 +6,14 @@
 #    By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/13 19:39:22 by cnorma            #+#    #+#              #
-#    Updated: 2022/04/21 19:52:15 by cnorma           ###   ########.fr        #
+#    Updated: 2022/04/23 19:08:12 by cnorma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		=	zombie
+NAME 		=	attack
 
-SRC			=	Zombie.cpp	main.cpp	zombieHorde.cpp
+SRC			=	Weapon.cpp	main.cpp	HumanA.cpp \
+				HumanB.cpp
 
 SRC_RIR 	=	./
 
@@ -20,7 +21,7 @@ OBJ_DIR		=	./obj/
 
 OBJ			=	$(patsubst $(SRC_DIR)%, $(OBJ_DIR)%, $(SRC:.cpp=.o))
 
-HEADER		=	./Zombie.hpp
+HEADER		=	./Weapon.hpp	./HumanA.hpp	./HumanB.hpp
 
 CC			=	c++
 
