@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/24 13:34:30 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/24 18:54:57 by cnorma           ###   ########.fr       */
+/*   Created: 2022/04/24 15:42:17 by cnorma            #+#    #+#             */
+/*   Updated: 2022/04/24 17:18:15 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Harl.hpp"
+#ifndef HARL_H
+# define HARL_H
 
-int main(void)
+# include <iostream>
+
+class Harl
 {
-	Harl harl;
+private:
+	void debug( void );
+	void info( void );
+	void warning( void );
+	void error( void );
 
-	harl.complain("debug");
-	harl.complain("info");
-	harl.complain("warning");
-	harl.complain("error");
-	return (0);
-}
+public:
+	Harl();
+	void	complain( std::string level );
+	~Harl();
+
+};
+
+#endif
