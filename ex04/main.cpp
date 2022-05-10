@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 13:34:30 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/24 15:25:07 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/05/10 21:33:50 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,15 @@ int main(int argc, char **argv)
 
 	for (getline(in, buf); !in.eof(); getline(in, buf))
 	{
-		for(int i = 0; i >= 0;)
+		int tmp = 0;
+		for(int i = tmp; i >= 0;)
 		{
-			i = buf.find(s1);
+			i = buf.find(s1, tmp);
 			if (i == -1)
 				continue ;
 			buf.erase(i, s1.length());
 			buf.insert(i, s2);
+			tmp = i + s2.length();
 		}
 		out << buf << std::endl;
 	}
