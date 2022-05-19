@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 13:34:30 by cnorma            #+#    #+#             */
-/*   Updated: 2022/05/10 21:33:50 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/05/19 19:33:42 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ int main(int argc, char **argv)
 	}
 	in.close();
 	out.close();
+
 	return 0;
 }
